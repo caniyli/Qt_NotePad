@@ -137,7 +137,7 @@ void MainWindow::on_actionPrint_triggered()
 	if (dialog.exec() == QDialog::Rejected)
 		return;
 #endif // QT_CONFIG(printdialog)
-	ui->textEdit->print(&printDev);
+	ui->plainTextEdit->print(&printDev);
 #endif // QT_CONFIG(printer)
 }
 
